@@ -12,7 +12,9 @@ const apiUrl = 'https://www.udemy.com/api-2.0/courses/';
 async function fetchCourses(page) {
   const response = await fetch(`${apiUrl}?page=${page}&${priceFilter}`, {
     headers: {
-      'Authorization': `Basic ${encodedCredentials}`
+      "Accept": "application/json, text/plain, */*",
+      "Authorization": "Basic M2J2NGNOMndoUWVHa284RHFWS0VZb1R1OGpzOXBqUHBEcU15RkxkMzpRQnJSQUZkbzc1U1RzbWpYbUdkZlJxTU1aVDlCaTBmQUlNVERYT1huN1ZuZVJrQW9PbWk4Wjh0bHozYmdYbXNEVWJyR1NOU3dOeGJVMVpKYnF4cm9YcFhvNzhPWXBLVzNkV1pYS0JtTEpSbmJUNVphaFRTelNCWDliTHZLc2lnbw==",
+      "Content-Type": "application/json"
     },
     mode:"no-cors"
   });
