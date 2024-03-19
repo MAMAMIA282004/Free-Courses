@@ -14,9 +14,7 @@ async function fetchCourses(page) {
     headers: {
       'Authorization': `Basic ${encodedCredentials}`
     },
-    
-    clientId:`${clientId}`,
-    clientSecret:`${clientSecret}`
+    mode:"no-cors"
   });
   if (!response.ok) {
     throw new Error('Failed to fetch course data');
