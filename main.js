@@ -6,7 +6,7 @@ const priceFilter = 'price=price-free'; // Change 'price-free' to 'price-paid' f
 const encodedCredentials = btoa(`${clientId}:${clientSecret}`);
 
 // Endpoint URL for fetching course data
-const apiUrl = 'http://www.udemy.com/api-2.0/courses/';
+const apiUrl = 'https://www.udemy.com/api-2.0/courses/';
 
 // Function to fetch courses from a specific page
 async function fetchCourses(page) {
